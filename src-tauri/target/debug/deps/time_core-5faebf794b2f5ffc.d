@@ -1,0 +1,10 @@
+/Users/kanmemacbookair/Desktop/github/alpaca-school-youtube/okinawa-social-resources-app/src-tauri/target/debug/deps/time_core-5faebf794b2f5ffc.d: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/convert.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/hint.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/util.rs
+
+/Users/kanmemacbookair/Desktop/github/alpaca-school-youtube/okinawa-social-resources-app/src-tauri/target/debug/deps/libtime_core-5faebf794b2f5ffc.rlib: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/convert.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/hint.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/util.rs
+
+/Users/kanmemacbookair/Desktop/github/alpaca-school-youtube/okinawa-social-resources-app/src-tauri/target/debug/deps/libtime_core-5faebf794b2f5ffc.rmeta: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/convert.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/hint.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/util.rs
+
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/lib.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/convert.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/hint.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.4/src/util.rs:
