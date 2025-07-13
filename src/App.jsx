@@ -10,6 +10,7 @@ const OkinawaSocialResourcesApp = () => {
   const [windowSize, setWindowSize] = useState({ width: window.innerWidth, height: window.innerHeight });
   const [selectedRegion, setSelectedRegion] = useState(null);
   const [selectedMunicipality, setSelectedMunicipality] = useState(null);
+  const [showInfo, setShowInfo] = useState(true); // 新しいstateを追加
 
   const rotationAngle = useRef(0);
   const dragInfo = useRef({ isDragging: false, startAngle: 0, startRotation: 0, startX: 0, startY: 0, hasDragged: false });
@@ -247,10 +248,17 @@ const OkinawaSocialResourcesApp = () => {
 
   return (
     <div className={`min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 overflow-hidden ${dragInfo.current.isDragging && dragInfo.current.hasDragged ? 'cursor-grabbing' : 'cursor-grab'}`}>
-      <div className="absolute top-2 left-2 sm:top-4 sm:left-4 z-30 bg-white/70 backdrop-blur-sm p-3 rounded-lg">
-        <h1 className="text-lg sm:text-xl font-bold text-gray-800">沖縄22歳向け社会資源マップ</h1>
-        <p className="text-xs sm:text-sm text-gray-600">ドラッグで回転できます</p>
-      </div>
+      {showInfo && (
+        <div className="absolute top-2 left-2 sm:top-4 sm:left-4 z-30 bg-white/70 backdrop-blur-sm p-3 rounded-lg cursor-pointer" onClick={() => setShowInfo(false)}>
+          <h1 className="text-lg sm:text-xl font-bold text-gray-800">沖縄22歳向け社会資源マップ</h1>
+          <p className="text-xs sm:text-sm text-gray-600">ドラッグで回転できます</p>
+        </div>
+      )}
+      {!showInfo && (
+        <div className="absolute top-2 left-2 sm:top-4 sm:left-4 z-30 bg-white/70 backdrop-blur-sm p-3 rounded-lg cursor-pointer" onClick={() => setShowInfo(true)}>
+          <h1 className="text-lg sm:text-xl font-bold text-gray-800">情報</h1>
+        </div>
+      )}
       
       {selectedCategory && (
         <button onClick={() => handleNodeClick(() => setSelectedCategory(null))} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-30 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-all">
