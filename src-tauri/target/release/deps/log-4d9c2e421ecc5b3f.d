@@ -1,0 +1,10 @@
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/log-4d9c2e421ecc5b3f.d: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/macros.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/serde.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/__private_api.rs
+
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/liblog-4d9c2e421ecc5b3f.rlib: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/macros.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/serde.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/__private_api.rs
+
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/liblog-4d9c2e421ecc5b3f.rmeta: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/macros.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/serde.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/__private_api.rs
+
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/lib.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/macros.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/serde.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.27/src/__private_api.rs:

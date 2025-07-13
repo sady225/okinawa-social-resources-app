@@ -1,0 +1,10 @@
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/walkdir-0851954b161335a5.d: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/dent.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/error.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/util.rs
+
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/libwalkdir-0851954b161335a5.rlib: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/dent.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/error.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/util.rs
+
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/libwalkdir-0851954b161335a5.rmeta: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/dent.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/error.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/util.rs
+
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/lib.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/dent.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/error.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/walkdir-2.5.0/src/util.rs:

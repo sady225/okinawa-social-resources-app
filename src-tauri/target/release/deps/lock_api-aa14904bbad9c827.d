@@ -1,0 +1,10 @@
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/lock_api-aa14904bbad9c827.d: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/mutex.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/remutex.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/rwlock.rs
+
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/liblock_api-aa14904bbad9c827.rlib: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/mutex.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/remutex.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/rwlock.rs
+
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/liblock_api-aa14904bbad9c827.rmeta: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/mutex.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/remutex.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/rwlock.rs
+
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/lib.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/mutex.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/remutex.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.13/src/rwlock.rs:

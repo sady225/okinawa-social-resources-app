@@ -1,0 +1,10 @@
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/globset-da88e3616a6b4d9d.d: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/fnv.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/glob.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/pathutil.rs
+
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/libglobset-da88e3616a6b4d9d.rlib: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/fnv.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/glob.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/pathutil.rs
+
+/Users/kanmemacbookair/Desktop/github/okinawa-social-resources-app/src-tauri/target/release/deps/libglobset-da88e3616a6b4d9d.rmeta: /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/lib.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/fnv.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/glob.rs /Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/pathutil.rs
+
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/lib.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/fnv.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/glob.rs:
+/Users/kanmemacbookair/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/globset-0.4.16/src/pathutil.rs:
