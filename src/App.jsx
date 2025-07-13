@@ -142,7 +142,7 @@ const OkinawaSocialResourcesApp = () => {
     <div className="absolute" style={{ top: displayCenter.y, left: displayCenter.x, transform: 'translate(-50%, -50%)', zIndex: 20 }}>
       <div
         className={`bg-indigo-500 hover:bg-indigo-600 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-2xl hover:shadow-3xl
-          ${isCategorySelected ? 'w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32' : 'w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40'}`
+          ${isCategorySelected ? 'w-[64px] h-[64px] sm:w-24 sm:h-24 md:w-32 md:h-32' : 'w-[89.6px] h-[89.6px] sm:w-32 sm:h-32 md:w-40 md:h-40'}`
         }
         onClick={() => handleNodeClick(onClick)}
       >
