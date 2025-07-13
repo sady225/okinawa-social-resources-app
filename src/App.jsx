@@ -148,10 +148,7 @@ const OkinawaSocialResourcesApp = () => {
         onClick={() => handleNodeClick(onClick)}
       >
         <div className="text-center">
-          <Search className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white mx-auto mb-1 sm:mb-2" />
-          <div className="text-white text-sm sm:text-lg font-bold leading-tight">
-            沖縄22歳向け<br />社会資源
-          </div>
+          <Search className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white mx-auto" />
         </div>
       </div>
     </div>
