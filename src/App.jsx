@@ -172,7 +172,7 @@ const OkinawaSocialResourcesApp = () => {
   
   const displayCenter = useMemo(() => {
       return selectedCategory
-          ? { x: screenCenter.x, y: screenCenter.y - 50 }
+          ? { x: screenCenter.x, y: screenCenter.y - screenCenter.y * 0.1 }
           : screenCenter;
   }, [screenCenter, selectedCategory]);
 
@@ -244,13 +244,13 @@ const OkinawaSocialResourcesApp = () => {
       <div
         className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-500 hover:scale-110"
         style={{ left: `${item.position.x}px`, top: `${item.position.y}px`, zIndex: 10 }}
-        onMouseDown={(e) => e.stopPropagation()} 
+        onMouseDown={(e) => e.stopPropagation()}
         onClick={() => handleNodeClick(onClick)}
       >
-        <div className={`${item.color} w-24 h-24 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow`}>
-          <IconComponent className="w-10 h-10 text-white" />
+        <div className={`${item.color} w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow`}>
+          <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
         </div>
-        <div className="text-center mt-2 text-base font-medium text-gray-700 max-w-24">
+        <div className="text-center mt-2 text-sm sm:text-base md:text-lg font-medium text-gray-700 max-w-[5rem] sm:max-w-24 md:max-w-28">
           {item.name}
         </div>
       </div>
@@ -266,26 +266,27 @@ const OkinawaSocialResourcesApp = () => {
         onMouseDown={(e) => e.stopPropagation()}
         onClick={() => handleNodeClick(onClick)}
       >
-        <div className={`${item.color} w-20 h-20 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow`}>
-          <IconComponent className="w-8 h-8 text-white" />
+        <div className={`${item.color} w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow`}>
+          <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-white" />
         </div>
-        <div className="text-center mt-2 text-sm font-medium text-gray-700 max-w-20 leading-tight">
+        <div className="text-center mt-2 text-xs sm:text-sm md:text-base font-medium text-gray-700 max-w-[4rem] sm:max-w-20 md:max-w-24 leading-tight">
           {item.name}
         </div>
       </div>
     );
   };
 
-  const CenterNode = ({ onClick, size }) => (
+  const CenterNode = ({ onClick, isCategorySelected }) => (
     <div className="absolute" style={{ top: displayCenter.y, left: displayCenter.x, transform: 'translate(-50%, -50%)', zIndex: 20 }}>
-      <div 
-        className={'bg-indigo-500 hover:bg-indigo-600 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-2xl hover:shadow-3xl'}
-        style={{ width: size, height: size }}
+      <div
+        className={`bg-indigo-500 hover:bg-indigo-600 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-2xl hover:shadow-3xl
+          ${isCategorySelected ? 'w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32' : 'w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40'}`
+        }
         onClick={() => handleNodeClick(onClick)}
       >
         <div className="text-center">
-          <Search className="w-10 h-10 text-white mx-auto mb-2" />
-          <div className="text-white text-lg font-bold leading-tight">
+          <Search className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white mx-auto mb-1 sm:mb-2" />
+          <div className="text-white text-sm sm:text-lg font-bold leading-tight">
             沖縄22歳向け<br />社会資源
           </div>
         </div>
@@ -361,7 +362,7 @@ const OkinawaSocialResourcesApp = () => {
 
           {(!isLocationSelectionNeeded || (isLocationSelectionNeeded && selectedRegion && selectedMunicipality)) && (
             <div className="mt-8 bg-gray-50 rounded-lg p-4 sm:p-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">詳細情報</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-3">詳細情報</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 {typeof selectedResource.getDetails === 'function'
                   ? selectedResource.getDetails(selectedMunicipality)
@@ -384,13 +385,13 @@ const OkinawaSocialResourcesApp = () => {
 
   return (
     <div className={`min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 overflow-hidden ${dragInfo.current.isDragging && dragInfo.current.hasDragged ? 'cursor-grabbing' : 'cursor-grab'}`}>
-      <div className="absolute top-4 left-4 z-30 bg-white/70 backdrop-blur-sm p-3 rounded-lg">
-        <h1 className="text-xl font-bold text-gray-800">沖縄22歳向け社会資源マップ</h1>
-        <p className="text-gray-600 text-sm">ドラッグで回転できます</p>
+      <div className="absolute top-2 left-2 sm:top-4 sm:left-4 z-30 bg-white/70 backdrop-blur-sm p-3 rounded-lg">
+        <h1 className="text-lg sm:text-xl font-bold text-gray-800">沖縄22歳向け社会資源マップ</h1>
+        <p className="text-xs sm:text-sm text-gray-600">ドラッグで回転できます</p>
       </div>
       
       {selectedCategory && (
-        <button onClick={() => handleNodeClick(() => setSelectedCategory(null))} className="absolute top-4 right-4 z-30 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-all">
+        <button onClick={() => handleNodeClick(() => setSelectedCategory(null))} className="absolute top-2 right-2 sm:top-4 sm:right-4 z-30 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-all">
           <X className="w-6 h-6 text-gray-600" />
         </button>
       )}
@@ -412,7 +413,7 @@ const OkinawaSocialResourcesApp = () => {
             ))
         )}
 
-        <CenterNode onClick={() => setSelectedCategory(null)} size={selectedCategory ? 120 : 160} />
+        <CenterNode onClick={() => setSelectedCategory(null)} isCategorySelected={selectedCategory !== null} />
 
         {selectedCategory && (
           <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 bg-white/80 backdrop-blur-md rounded-xl shadow-xl p-4 sm:p-6 max-w-md w-11/12 sm:w-full z-20 pointer-events-none">
@@ -420,10 +421,10 @@ const OkinawaSocialResourcesApp = () => {
               <div className={`${categories.find(c => c.id === selectedCategory)?.color} p-2 rounded-full mr-3`}>
                 {React.createElement(categories.find(c => c.id === selectedCategory)?.icon, { className: "w-5 h-5 text-white" })}
               </div>
-              <h3 className="text-lg font-semibold text-gray-800">{categories.find(c => c.id === selectedCategory)?.name}</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800">{categories.find(c => c.id === selectedCategory)?.name}</h3>
             </div>
-            <p className="text-gray-600 mb-3">{categories.find(c => c.id === selectedCategory)?.description}</p>
-            <p className="text-sm text-gray-500">{filteredResources.length}つの社会資源があります</p>
+            <p className="text-sm sm:text-base text-gray-600 mb-3">{categories.find(c => c.id === selectedCategory)?.description}</p>
+            <p className="text-xs sm:text-sm text-gray-500">{filteredResources.length}つの社会資源があります</p>
           </div>
         )}
       </div>
@@ -431,4 +432,6 @@ const OkinawaSocialResourcesApp = () => {
   );
 };
 
-export default OkinawaSocialResourcesApp;
+
+
+  export default OkinawaSocialResourcesApp;
