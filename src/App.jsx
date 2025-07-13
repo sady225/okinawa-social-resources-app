@@ -198,24 +198,29 @@ const OkinawaSocialResourcesApp = () => {
   }, [filteredResources, displayCenter, windowSize, rotationAngle.current]);
 
   const handleMouseDown = useCallback((e) => {
-    const startX = e.clientX - displayCenter.x;
-    const startY = e.clientY - displayCenter.y;
+    const clientX = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
+    const clientY = e.type.startsWith('touch') ? e.touches[0].clientY : e.clientY;
+    const startX = clientX - displayCenter.x;
+    const startY = clientY - displayCenter.y;
     const startAngle = Math.atan2(startY, startX);
-    dragInfo.current = { isDragging: true, startAngle, startRotation: rotationAngle.current, startX: e.clientX, startY: e.clientY, hasDragged: false };
+    dragInfo.current = { isDragging: true, startAngle, startRotation: rotationAngle.current, startX: clientX, startY: clientY, hasDragged: false };
   }, [displayCenter]);
 
   const handleMouseMove = useCallback((e) => {
     if (!dragInfo.current.isDragging) return;
 
-    const dx = e.clientX - dragInfo.current.startX;
-    const dy = e.clientY - dragInfo.current.startY;
+    const clientX = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
+    const clientY = e.type.startsWith('touch') ? e.touches[0].clientY : e.clientY;
+
+    const dx = clientX - dragInfo.current.startX;
+    const dy = clientY - dragInfo.current.startY;
     if (!dragInfo.current.hasDragged && Math.sqrt(dx * dx + dy * dy) > 5) {
         dragInfo.current.hasDragged = true;
     }
 
     if (dragInfo.current.hasDragged) {
-        const currentX = e.clientX - displayCenter.x;
-        const currentY = e.clientY - displayCenter.y;
+        const currentX = clientX - displayCenter.x;
+        const currentY = clientY - displayCenter.y;
         const currentAngle = Math.atan2(currentY, currentX);
         const angleDiff = currentAngle - dragInfo.current.startAngle;
         rotationAngle.current = dragInfo.current.startRotation + angleDiff;
@@ -396,7 +401,7 @@ const OkinawaSocialResourcesApp = () => {
         </button>
       )}
 
-      <div className="relative w-full h-screen" onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp}>
+      <div className="relative w-full h-screen" onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp} onTouchCancel={handleMouseUp}>
         {selectedCategory === null ? (
             positionedCategories.map(category => (
               <React.Fragment key={category.id}>
