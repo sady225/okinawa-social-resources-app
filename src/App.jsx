@@ -29,7 +29,7 @@ const OkinawaSocialResourcesApp = () => {
   
   const displayCenter = useMemo(() => {
       return selectedCategory
-          ? { x: screenCenter.x, y: screenCenter.y - screenCenter.y * 0.1 }
+          ? { x: screenCenter.x, y: screenCenter.y - screenCenter.y * 0.05 }
           : screenCenter;
   }, [screenCenter, selectedCategory]);
 
